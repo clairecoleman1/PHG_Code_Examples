@@ -8,6 +8,7 @@
 # RNA-Seq
 
 # QC plots 
+# Please download RNA-seq metadata at: " "
 rnaqc <- read.csv("./Downloads/metadata-phg-RNA.csv")
 celllabels <- c(astroAndMicroglia = "Astrocytes and Microglia", neuron = "Neurons", oligodendrocytes = "Oligodendrocytes")
 library(ggplot2)
@@ -50,7 +51,7 @@ ggplot(rnaqc, aes(x = XIST_expression, y = RPS4Y1_expression, color = Gender)) +
 
 #tsne
 
-#Download rnaseq_count_matrix_norm.tsv in advance
+# Please download RNA-seq count matrix at https://www.synapse.org/#!Synapse:syn51138026 
 readCount <- read.csv("./Downloads/rnaseq_count_matrix_norm.tsv", sep = "\t")
 #install.packages("ggplot2")
 library(ggplot2)
@@ -103,6 +104,7 @@ plottsne
 # ATAC-Seq
 
 # QC plots 
+# Please download ATAC-seq metadata at " "
 atacqc <- read.csv("./Downloads/metadata-phg-ATAC.csv")
 celllabels <- c(microgliaAndAstrocytes = "Astrocytes and Microglia", neuron = "Neurons", oligodendrocytes = "Oligodendrocytes")
 library(ggh4x)
@@ -141,8 +143,7 @@ ggplot(atacqc, aes(x = readCountInfo_Total, y = chryCounts, color = Gender)) + g
 #ggsave("atac-sex-check.pdf", last_plot())
 
 ################################################################################
-
-#Download atacseq_count_matrix_norm.tsv in advance
+# Please download ATAC-seq count matrix at https://www.synapse.org/#!Synapse:syn51137300
 readCount <- read.csv("./Downloads/atacseq_count_matrix_norm.tsv", sep = "\t")
 head(readCount)
 #install.packages("ggplot2")
