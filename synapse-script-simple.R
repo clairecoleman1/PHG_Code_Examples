@@ -8,7 +8,7 @@
 # RNA-Seq
 
 # QC plots 
-# Please download RNA-seq metadata at: " "
+# Please download RNA-seq metadata from this repository. 
 rnaqc <- read.csv("./Downloads/metadata-phg-RNA.csv")
 celllabels <- c(astroAndMicroglia = "Astrocytes and Microglia", neuron = "Neurons", oligodendrocytes = "Oligodendrocytes")
 library(ggplot2)
@@ -104,7 +104,7 @@ plottsne
 # ATAC-Seq
 
 # QC plots 
-# Please download ATAC-seq metadata at " "
+# Please download ATAC-seq metadata from this repository.
 atacqc <- read.csv("./Downloads/metadata-phg-ATAC.csv")
 celllabels <- c(microgliaAndAstrocytes = "Astrocytes and Microglia", neuron = "Neurons", oligodendrocytes = "Oligodendrocytes")
 library(ggh4x)
