@@ -41,7 +41,7 @@ rgc
 # RNA-Seq
 
 #Sex check 
-ggplot(rnaqc, aes(x = XIST_expression, y = RPS4Y1_expression, color = Gender)) + geom_point() + theme_classic()
+ggplot(rnaqc, aes(x = XIST_expression, y = RPS4Y1_expression, color = Sex)) + geom_point() + theme_classic()
 #ggsave("rna-sex-check.pdf", last_plot())
 
 
@@ -139,7 +139,7 @@ agt <- grid.arrange(aplot1, aplot2, aplot3, aplot4, aplot5, aplot6, aplot7, aplo
 # ATAC-Seq
 
 #Sex check 
-ggplot(atacqc, aes(x = readCountInfo_Total, y = chryCounts, color = Gender)) + geom_point() + theme_classic()
+ggplot(atacqc, aes(x = readCountInfo_Total, y = chryCounts, color = sex)) + geom_point() + theme_classic()
 #ggsave("atac-sex-check.pdf", last_plot())
 
 ################################################################################
